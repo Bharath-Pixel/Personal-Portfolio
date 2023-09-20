@@ -1022,17 +1022,29 @@ img {
 /* Breakpoints */
 
 /* Small devices */
-@media screen and (max-width: 340px) {
+
+
+@media screen and (max-width: 576px) {
   .container{
     margin-inline: 1rem;
   }
 
   .home_image{
-    width: 180px;
+    width: 190px;
+  }
+  
+  .home_social{
+    display: none;
   }
   
   .about_image{
-    width: 180px;
+    width: 190px;
+  }
+
+  .about_description-container{
+    margin-bottom: 2rem;
+    width: 90%;
+    margin-inline: auto;
   }
 
   .about_shadow{
@@ -1057,8 +1069,13 @@ img {
   .projects_container{
     grid-template-columns: 350px;
     justify-content: center;
+    margin-top: 2rem;
   }
 
+  .home_image,
+  .about_image{
+    width: 250px;
+  }
 
   .contact_data{
     width: 350px;
