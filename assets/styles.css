@@ -477,7 +477,6 @@ img {
 
 .button_ghost:hover{
   border: 3px solid var(--first-color);
-  color: var(--first-color);
 }
 
 .about{
@@ -545,6 +544,10 @@ img {
 
 .about_info{
   padding-left:1.25rem
+}
+
+.about_item-2{
+  list-style-type: none;
 }
 
 .about_description{
@@ -698,7 +701,6 @@ img {
 .projects_buttons{
   display: flex;
   column-gap: 1.25rem;
-
 }
 
 .projects_link{
@@ -708,6 +710,8 @@ img {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   color: var(--text-color);
+  border: 1px solid var(--text-color);
+  padding: 0.75rem;
   transition: color 0.4s;
 }
 
@@ -1338,8 +1342,8 @@ img {
   }
 
   .about_description{
-    font-size: var(--h2-font-size);
-    margin-bottom: 2rem;
+    font-size: var(--h3-font-size);
+    margin-bottom: 3rem;
   }
 
   .about_description::after{
