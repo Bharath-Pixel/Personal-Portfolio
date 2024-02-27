@@ -52,13 +52,28 @@ window.addEventListener('scroll', scrollActive)
 
 
 
+const scrollUpButton = document.getElementById('scroll-up');
+
 // To show the scroll up button
-const scrollUp = () =>{
-	const scrollUp = document.getElementById('scroll-up')
-	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-						: scrollUp.classList.remove('show-scroll')
+const scrollUp = () => {
+    if (scrollUpButton) {
+        window.scrollY >= 350 ? scrollUpButton.classList.add('show-scroll')
+                              : scrollUpButton.classList.remove('show-scroll');
+    }
 }
-window.addEventListener('scroll', scrollUp)
+
+window.addEventListener('scroll', scrollUp);
+
+// Add event listener to scroll-up button
+if (scrollUpButton) {
+    scrollUpButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
 
 // Scrollreveal animation
 
